@@ -52,12 +52,15 @@ void NewOrder()
 
     float TotalPrice = NumCappuccino * Cappuccino + NumEspresso * Espresso + NumLatte * Latte + NumIcedCoffee * IcedCoffee;
 
-    printf("|Quantity  | Item        | Item Ex. GST | GST         | Total\n");
-    printf("|%-9.d | Cappuccino  | $3.00        | $0.30       | $%5.2f |\n", NumCappuccino, NumCappuccino * Cappuccino );
-    printf("|%-9.d | Espresso    | $2.25        | $0.23       | $%5.2f |\n", NumEspresso, NumEspresso * Espresso);
-    printf("|%-9.d | Latte       | $2.50        | $0.25       | $%5.2f |\n", NumLatte, NumLatte * Latte);
-    printf("|%-9.d | Iced Coffee | $2.50        | $0.25       | $%5.2f |\n\n", NumIcedCoffee, NumIcedCoffee * IcedCoffee);
+    printf("| Quantity | Item        | Item Ex. GST | GST         |  Total  |\n");
+    printf("| %-9.d| Cappuccino  | $3.00        | $0.30       | $%6.2f |\n", NumCappuccino, NumCappuccino * Cappuccino );
+    printf("| %-9.d| Espresso    | $2.25        | $0.23       | $%6.2f |\n", NumEspresso, NumEspresso * Espresso);
+    printf("| %-9.d| Latte       | $2.50        | $0.25       | $%6.2f |\n", NumLatte, NumLatte * Latte);
+    printf("| %-9.d| Iced Coffee | $2.50        | $0.25       | $%6.2f |\n\n", NumIcedCoffee, NumIcedCoffee * IcedCoffee);
     printf(" Surcharge : $%-25.2f Overall Total : $%.2f \n", Surcharge, TotalPrice);
+
+    float Tendered;
+    printf("Amount Tendered: "); cin >> Tendered;
 
 }
 
@@ -80,12 +83,12 @@ int main()
 
     string restart;
 
-    while (restart != "N")
+    while (restart != "n")
     {
 
         program();
 
-        printf("\nRestart program? (Y/N)\n");
+        printf("\nRestart program? (y/n)\n");
         cin >> restart;
         printf("\n");
 
