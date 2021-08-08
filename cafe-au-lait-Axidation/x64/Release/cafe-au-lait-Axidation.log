@@ -1,0 +1,13 @@
+﻿  cafe-au-lait-Axidation.cpp
+C:\Users\zooma\Documents\GitHub\cafe-au-lait-Axidation\cafe-au-lait-Axidation\cafe-au-lait-Axidation.cpp(65,27): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\zooma\Documents\GitHub\cafe-au-lait-Axidation\cafe-au-lait-Axidation\cafe-au-lait-Axidation.cpp(66,27): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\zooma\Documents\GitHub\cafe-au-lait-Axidation\cafe-au-lait-Axidation\cafe-au-lait-Axidation.cpp(67,23): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\zooma\Documents\GitHub\cafe-au-lait-Axidation\cafe-au-lait-Axidation\cafe-au-lait-Axidation.cpp(68,28): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\zooma\Documents\GitHub\cafe-au-lait-Axidation\cafe-au-lait-Axidation\cafe-au-lait-Axidation.cpp(87,103): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\zooma\Documents\GitHub\cafe-au-lait-Axidation\cafe-au-lait-Axidation\cafe-au-lait-Axidation.cpp(119,76): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\zooma\Documents\GitHub\cafe-au-lait-Axidation\cafe-au-lait-Axidation\cafe-au-lait-Axidation.cpp(172,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 530 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  cafe-au-lait-Axidation.vcxproj -> C:\Users\zooma\Documents\GitHub\cafe-au-lait-Axidation\x64\Release\cafe-au-lait-Axidation.exe
