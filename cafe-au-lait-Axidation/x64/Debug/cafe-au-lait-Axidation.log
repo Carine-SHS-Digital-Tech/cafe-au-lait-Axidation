@@ -1,6 +1,7 @@
 ﻿  cafe-au-lait-Axidation.cpp
-\\E4057S01SV001.blue.schools.internal\fsE4057S01-StudentFolders$\callan.lowrie\My Documents\GitHub\cafe-au-lait-Axidation\cafe-au-lait-Axidation\cafe-au-lait-Axidation.cpp(35,27): warning C4305: '=': truncation from 'double' to 'float'
-\\E4057S01SV001.blue.schools.internal\fsE4057S01-StudentFolders$\callan.lowrie\My Documents\GitHub\cafe-au-lait-Axidation\cafe-au-lait-Axidation\cafe-au-lait-Axidation.cpp(36,27): warning C4305: '=': truncation from 'double' to 'float'
-\\E4057S01SV001.blue.schools.internal\fsE4057S01-StudentFolders$\callan.lowrie\My Documents\GitHub\cafe-au-lait-Axidation\cafe-au-lait-Axidation\cafe-au-lait-Axidation.cpp(37,23): warning C4305: '=': truncation from 'double' to 'float'
-\\E4057S01SV001.blue.schools.internal\fsE4057S01-StudentFolders$\callan.lowrie\My Documents\GitHub\cafe-au-lait-Axidation\cafe-au-lait-Axidation\cafe-au-lait-Axidation.cpp(38,28): warning C4305: '=': truncation from 'double' to 'float'
-  cafe-au-lait-Axidation.vcxproj -> \\E4057S01SV001.blue.schools.internal\fsE4057S01-StudentFolders$\callan.lowrie\My Documents\GitHub\cafe-au-lait-Axidation\x64\Debug\cafe-au-lait-Axidation.exe
+C:\Users\zooma\Documents\GitHub\cafe-au-lait-Axidation\cafe-au-lait-Axidation\cafe-au-lait-Axidation.cpp(36,27): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\zooma\Documents\GitHub\cafe-au-lait-Axidation\cafe-au-lait-Axidation\cafe-au-lait-Axidation.cpp(37,27): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\zooma\Documents\GitHub\cafe-au-lait-Axidation\cafe-au-lait-Axidation\cafe-au-lait-Axidation.cpp(38,23): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\zooma\Documents\GitHub\cafe-au-lait-Axidation\cafe-au-lait-Axidation\cafe-au-lait-Axidation.cpp(39,28): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\zooma\Documents\GitHub\cafe-au-lait-Axidation\cafe-au-lait-Axidation\cafe-au-lait-Axidation.cpp(51,103): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  cafe-au-lait-Axidation.vcxproj -> C:\Users\zooma\Documents\GitHub\cafe-au-lait-Axidation\x64\Debug\cafe-au-lait-Axidation.exe

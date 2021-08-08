@@ -3,14 +3,15 @@ using namespace std;
 
 void NewOrder()
 {
-    float Cappuccino = 0;
-    float Espresso = 0;
-    float Latte = 0;
-    float IcedCoffee = 0;
-    string Item1;
-    string Item2;
-    string Item3;
-    string Item4;
+    float Cappuccino;
+    float Espresso;
+    float Latte;
+    float IcedCoffee;
+    float Surcharge = 0;
+    int NumCappuccino;
+    int NumEspresso;
+    int NumLatte;
+    int NumIcedCoffee;
 
     string choice2;
     std::cout << "Dine-In(1) or Take-Away(2)?\n";
@@ -25,7 +26,7 @@ void NewOrder()
         Espresso = 2.475f;
         Latte = 2.75f;
         IcedCoffee = 2.75f;
-        printf("~-MENU-~ (inc. 10%% GST)\n1 - Cappuccino $%.2f\n2 - Esspresso $%.2f\n3 - Latte $%.2f\n4 - Iced Coffee $%.2f\n5 - None\n\n", Cappuccino, Espresso, Latte, IcedCoffee);
+        printf("~-MENU-~ (inc. 10%% GST)\n1 - Cappuccino $%.2f\n2 - Esspresso $%.2f\n3 - Latte $%.2f\n4 - Iced Coffee $%.2f\n\n", Cappuccino, Espresso, Latte, IcedCoffee);
 
     }
 
@@ -36,15 +37,27 @@ void NewOrder()
         Espresso = 2.59875;
         Latte = 2.8875;
         IcedCoffee = 2.8875;
-        printf("~-MENU-~ (inc. 10%% GST + 5%% Surcharge)\n1 - Cappuccino $%.2f\n2 - Esspresso $%.2f\n3 - Latte $%.2f\n4 - Iced Coffee $%.2f\n5 - None\n\n", Cappuccino, Espresso, Latte, IcedCoffee);
+        printf("~-MENU-~ (inc. 10%% GST + 5%% Surcharge)\n1 - Cappuccino $%.2f\n2 - Esspresso $%.2f\n3 - Latte $%.2f\n4 - Iced Coffee $%.2f\n\n", Cappuccino, Espresso, Latte, IcedCoffee);
 
     }
 
-    printf("Please enter desired items (Up to 4)\n");
-    printf("1: "); std::cin >> Item1;
-    printf("2: "); std::cin >> Item2;
-    printf("3: "); std::cin >> Item3;
-    printf("4: "); std::cin >> Item4;
+    printf("Please enter desired amount per item\n");
+    printf("1: "); std::cin >> NumCappuccino;
+    printf("2: "); std::cin >> NumEspresso;
+    printf("3: "); std::cin >> NumLatte;
+    printf("4: "); std::cin >> NumIcedCoffee;
+    std::cout << "\n";
+
+    if (choice2 == "2") Surcharge = 0.165 * NumCappuccino + 0.12375 * NumEspresso + 0.1375 * NumLatte + 0.1375 * NumIcedCoffee;
+
+    float TotalPrice = NumCappuccino * Cappuccino + NumEspresso * Espresso + NumLatte * Latte + NumIcedCoffee * IcedCoffee;
+
+    printf("|Quantity  | Item        | Item Ex. GST | GST         | Total\n");
+    printf("|%-9.d | Cappuccino  | $3.00        | $0.30       | $%5.2f |\n", NumCappuccino, NumCappuccino * Cappuccino );
+    printf("|%-9.d | Espresso    | $2.25        | $0.23       | $%5.2f |\n", NumEspresso, NumEspresso * Espresso);
+    printf("|%-9.d | Latte       | $2.50        | $0.25       | $%5.2f |\n", NumLatte, NumLatte * Latte);
+    printf("|%-9.d | Iced Coffee | $2.50        | $0.25       | $%5.2f |\n\n", NumIcedCoffee, NumIcedCoffee * IcedCoffee);
+    printf(" Surcharge : $%-25.2f Overall Total : $%.2f \n", Surcharge, TotalPrice);
 
 }
 
