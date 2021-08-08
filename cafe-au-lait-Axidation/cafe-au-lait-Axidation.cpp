@@ -52,17 +52,30 @@ void NewOrder()
 
     float TotalPrice = NumCappuccino * Cappuccino + NumEspresso * Espresso + NumLatte * Latte + NumIcedCoffee * IcedCoffee;
 
-    printf("| Quantity | Item        | Item Ex. GST | GST         |  Total  |\n");
-    printf("| %-9.d| Cappuccino  | $3.00        | $0.30       | $%6.2f |\n", NumCappuccino, NumCappuccino * Cappuccino );
-    printf("| %-9.d| Espresso    | $2.25        | $0.23       | $%6.2f |\n", NumEspresso, NumEspresso * Espresso);
-    printf("| %-9.d| Latte       | $2.50        | $0.25       | $%6.2f |\n", NumLatte, NumLatte * Latte);
-    printf("| %-9.d| Iced Coffee | $2.50        | $0.25       | $%6.2f |\n\n", NumIcedCoffee, NumIcedCoffee * IcedCoffee);
-    printf(" Surcharge : $%-25.2f Overall Total : $%.2f \n", Surcharge, TotalPrice);
+    printf("| Quantity | Item        | Single Item Ex. GST | GST         |  Total  |\n");
+    printf("| %-9.d| Cappuccino  | $3.00               | $0.30       | $%-6.2f |\n", NumCappuccino, NumCappuccino * Cappuccino);
+    printf("| %-9.d| Espresso    | $2.25               | $0.23       | $%-6.2f |\n", NumEspresso, NumEspresso * Espresso);
+    printf("| %-9.d| Latte       | $2.50               | $0.25       | $%-6.2f |\n", NumLatte, NumLatte * Latte);
+    printf("| %-9.d| Iced Coffee | $2.50               | $0.25       | $%-6.2f |\n\n", NumIcedCoffee, NumIcedCoffee * IcedCoffee);
+    printf(" Surcharge : $%-6.2f Overall Total : $%6.2f \n\n", Surcharge, TotalPrice);
 
     float Tendered;
-    printf("Amount Tendered: "); cin >> Tendered;
+    float Change;
+    printf("Amount Tendered ($): "); std::cin >> Tendered; std::cout << "\n\n\n";
+    Change = Tendered - TotalPrice;
 
-}
+    printf("_____---------------*****~~~| Cafe au Lait |~~~*****---------------_____\n");
+    printf("| Quantity | Item        | Single Item Ex. GST | GST         |  Total  |\n");
+    printf("| %-9.1d| Cappuccino  | $3.00               | $0.30       | $%-6.2f |\n", NumCappuccino, NumCappuccino * Cappuccino);
+    printf("| %-9.1d| Espresso    | $2.25               | $0.23       | $%-6.2f |\n", NumEspresso, NumEspresso * Espresso);
+    printf("| %-9.1d| Latte       | $2.50               | $0.25       | $%-6.2f |\n", NumLatte, NumLatte * Latte);
+    printf("| %-9.1d| Iced Coffee | $2.50               | $0.25       | $%-6.2f |\n\n", NumIcedCoffee, NumIcedCoffee * IcedCoffee);
+    printf(" Surcharge : $%-6.2f Overall Total : $%-6.2f\n", Surcharge, TotalPrice);
+    printf(" Tendered : $%-6.2f Change : $%-6.2f\n\n", Tendered, Change);
+
+    float TotalGST = 0.3 * NumCappuccino + 0.225 * NumEspresso + 0.25 * NumLatte + 0.25 * NumIcedCoffee;
+
+};
 
 void program()
 {
