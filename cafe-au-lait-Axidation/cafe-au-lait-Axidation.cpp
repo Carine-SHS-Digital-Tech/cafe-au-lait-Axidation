@@ -128,14 +128,14 @@ void DailySummary()
     printf("\nTotal GST        | $%.2f", T_TotalGST);
     printf("\nTotal Income     | $%.2f\n\n", T_TotalPrice);
 
-    DailySummaryCSV << "Total Dine-In, " << setprecision(2) << fixed << T_DineIn;
-    DailySummaryCSV << "\nTotal Take-Away, " << setprecision(2) << fixed << T_TakeOut;
-    DailySummaryCSV << "\nTotal Orders, " << setprecision(2) << fixed << T_Order;
-    DailySummaryCSV << "\nTotal Cappuccino, " << setprecision(2) << fixed << T_NumCappuccino;
-    DailySummaryCSV << "\nTotal Espresso, " << setprecision(2) << fixed << T_NumEspresso;
-    DailySummaryCSV << "\nTotal Latte, " << setprecision(2) << fixed << T_NumLatte;
-    DailySummaryCSV << "\nTotal Iced Coffee, " << setprecision(2) << fixed << T_NumIcedCoffee;
-    DailySummaryCSV << "\nTotal Cups Sold, " << setprecision(2) << fixed << T_Cups;
+    DailySummaryCSV << "Total Dine-In, " << T_DineIn;
+    DailySummaryCSV << "\nTotal Take-Away, " << T_TakeOut;
+    DailySummaryCSV << "\nTotal Orders, " << T_Order;
+    DailySummaryCSV << "\nTotal Cappuccino, " T_NumCappuccino;
+    DailySummaryCSV << "\nTotal Espresso, " << T_NumEspresso;
+    DailySummaryCSV << "\nTotal Latte, " << T_NumLatte;
+    DailySummaryCSV << "\nTotal Iced Coffee, " << T_NumIcedCoffee;
+    DailySummaryCSV << "\nTotal Cups Sold, " << T_Cups;
     DailySummaryCSV << "\nTotal GST, $" << setprecision(2) << fixed << T_TotalGST;
     DailySummaryCSV << "\nTotal Income, $" << setprecision(2) << fixed << T_TotalPrice;
 
