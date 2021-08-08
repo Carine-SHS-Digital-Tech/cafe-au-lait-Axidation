@@ -4,6 +4,6 @@ C:\Users\zooma\Documents\GitHub\cafe-au-lait-Axidation\cafe-au-lait-Axidation\ca
 C:\Users\zooma\Documents\GitHub\cafe-au-lait-Axidation\cafe-au-lait-Axidation\cafe-au-lait-Axidation.cpp(67,23): warning C4305: '=': truncation from 'double' to 'float'
 C:\Users\zooma\Documents\GitHub\cafe-au-lait-Axidation\cafe-au-lait-Axidation\cafe-au-lait-Axidation.cpp(68,28): warning C4305: '=': truncation from 'double' to 'float'
 C:\Users\zooma\Documents\GitHub\cafe-au-lait-Axidation\cafe-au-lait-Axidation\cafe-au-lait-Axidation.cpp(87,103): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\zooma\Documents\GitHub\cafe-au-lait-Axidation\cafe-au-lait-Axidation\cafe-au-lait-Axidation.cpp(118,76): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\zooma\Documents\GitHub\cafe-au-lait-Axidation\cafe-au-lait-Axidation\cafe-au-lait-Axidation.cpp(170,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\zooma\Documents\GitHub\cafe-au-lait-Axidation\cafe-au-lait-Axidation\cafe-au-lait-Axidation.cpp(119,76): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\zooma\Documents\GitHub\cafe-au-lait-Axidation\cafe-au-lait-Axidation\cafe-au-lait-Axidation.cpp(172,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
   cafe-au-lait-Axidation.vcxproj -> C:\Users\zooma\Documents\GitHub\cafe-au-lait-Axidation\x64\Debug\cafe-au-lait-Axidation.exe

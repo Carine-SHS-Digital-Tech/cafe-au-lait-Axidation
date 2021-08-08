@@ -99,6 +99,7 @@ void NewOrder()
     
     //Input for amount tendered
     printf("Amount Tendered ($): "); cin >> Tendered; cout << "\n\n\n";
+    if (Tendered < TotalPrice) { printf("\nAn error occured."); return; };
 
     //Calculates Change
     Change = Tendered - TotalPrice;
@@ -162,6 +163,7 @@ void DailySummary()
     DailySummaryCSV << "\nTotal Cups Sold, " << T_Cups;
     DailySummaryCSV << "\nTotal GST, $" << setprecision(2) << fixed << T_TotalGST;
     DailySummaryCSV << "\nTotal Income, $" << setprecision(2) << fixed << T_TotalPrice;
+    DailySummaryCSV << "\n\n";
 
     return;
 }
@@ -192,6 +194,7 @@ void main()
         cin >> restart;
         printf("\n");
 
+        //Ends the loop when neither "y" or "n" is input
         if (restart != "y") break;
 
     }
